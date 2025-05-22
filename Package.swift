@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
     name: "swift-uwp",
     products: [
-        .library(name: "UWP", type: .dynamic, targets: ["UWP"]),
+        .library(name: "UWP", type: .static, targets: ["UWP"]),
     ],
     dependencies: [
         .package(url: "https://github.com/thebrowsercompany/swift-cwinrt", branch: "main"),
